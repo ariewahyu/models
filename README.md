@@ -9,3 +9,12 @@ The [research models](https://github.com/tensorflow/models/tree/master/research)
 The [samples folder](samples) contains code snippets and smaller models that demonstrate features of TensorFlow, including code presented in various blog posts.
 
 The [tutorials folder](tutorials) is a collection of models described in the [TensorFlow tutorials](https://www.tensorflow.org/tutorials/).
+
+
+## Arie's Note (For evaluating the performance of model against generated adversarial images)
+1. Prepare generated adversarial images using Cleverhans library (attack methods: FGSM, BIM, PGD, VAT, etc)
+
+2. Convert the generated images into TF Records format
+
+3. Run the following file:
+  models/research/slim/eval.sh
